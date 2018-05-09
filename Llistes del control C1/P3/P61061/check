@@ -1,0 +1,8 @@
+g++ program.cc -o program.x
+./program.x < sample.inp > output
+d=$(diff output sample.cor) 
+if [ "$d" == "" ]; then
+    echo "sample OK"
+else
+    echo "sample NO"
+fi

@@ -1,0 +1,50 @@
+g++ program.cc -o program.x
+./program.x < sample-1.inp > output
+d=$(diff output sample-1.cor) 
+if [ "$d" == "" ]; then
+    echo "sample-1 OK"
+else
+    echo "sample-1 NO"
+fi
+./program.x < sample-2.inp > output
+d=$(diff output sample-2.cor) 
+if [ "$d" == "" ]; then
+    echo "sample-2 OK"
+else
+    echo "sample-2 NO"
+fi
+./program.x < sample-3.inp > output
+d=$(diff output sample-3.cor) 
+if [ "$d" == "" ]; then
+    echo "sample-3 OK"
+else
+    echo "sample-3 NO"
+fi
+./program.x < sample-4.inp > output
+d=$(diff output sample-4.cor) 
+if [ "$d" == "" ]; then
+    echo "sample-4 OK"
+else
+    echo "sample-4 NO"
+fi
+./program.x < sample-5.inp > output
+d=$(diff output sample-5.cor) 
+if [ "$d" == "" ]; then
+    echo "sample-5 OK"
+else
+    echo "sample-5 NO"
+fi
+./program.x < sample-6.inp > output
+d=$(diff output sample-6.cor) 
+if [ "$d" == "" ]; then
+    echo "sample-6 OK"
+else
+    echo "sample-6 NO"
+fi
+./program.x < sample-7.inp > output
+d=$(diff output sample-7.cor) 
+if [ "$d" == "" ]; then
+    echo "sample-7 OK"
+else
+    echo "sample-7 NO"
+fi
